@@ -290,7 +290,6 @@ static int _recv(lua_State *L)
     char buffer[len];
 //#endif
 
-    char bufr[len];
     int rd = recv(sd->fd, buffer, len, 0);
     if( rd < 0 )
     {
